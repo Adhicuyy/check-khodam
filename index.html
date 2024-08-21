@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Khodam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 md:p-8 lg:p-10 rounded-lg shadow-lg text-center max-w-xs md:max-w-sm lg:max-w-md w-full">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-800">Check Khodam</h1>
+        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base lg:text-lg">Masukkan nama Anda untuk melihat apakah Anda memiliki khodam.</p>
+        <form id="khodamForm" class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700 text-sm md:text-base">Nama:</label>
+                <input type="text" id="name" name="name" required class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-150 ease-in-out">
+            </div>
+            <button type="submit" class="mt-4 md:mt-6 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition duration-150 ease-in-out">Check Khodam</button>
+        </form>
+        <div id="result" class="mt-4 md:mt-6 text-sm md:text-lg font-semibold text-gray-800"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
